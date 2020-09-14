@@ -106,7 +106,18 @@ a:hover{
 .mainHeader{
     font-size: 48px;
     font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#workTitle{
+    width: 200px;
+    margin: 0 auto;
+    display: block;
     text-align: center;
+}
+
+.downArrow{
+    width: 100px;
 }
 
 h1{
