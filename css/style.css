@@ -5,7 +5,7 @@
     height: 80px;
     width: 90%;
     margin: 20px 50px 20px 50px;
-    display: inline-block;
+    display: block;
     top: 0;
 }
 
@@ -23,6 +23,8 @@ button{
 /*contact button nav*/
 #contact-button{
     color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 #contact-button:hover{
@@ -81,7 +83,7 @@ a:hover {
 
 .hero1{
     font-size: 64px;
-    font-weight: 400;
+    font-weight: 600;
     text-align: center;
     margin: 10px;
 }
@@ -98,7 +100,6 @@ a:hover {
 .content{
     min-height: 400px;
     margin: 50px 50px 50px 50px;
-    
 }
 
 .body{
