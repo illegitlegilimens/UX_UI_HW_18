@@ -6,10 +6,15 @@
     width: 90%;
     margin: 20px 50px 20px 50px;
     display: inline-block;
+    top: 0;
 }
 
 .rightnav{
     margin-right: 0px;
+}
+
+.Hamburger{
+    display: none;
 }
 
 /*contact button nav*/
@@ -109,9 +114,8 @@ img{
 }
 
 .zoom:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
-
 
 .mainHeader{
     font-size: 48px;
@@ -195,10 +199,7 @@ h3{
     grid-template-areas: 
     "BBBSImg BBBSText"
     "SJImg SJText";
-    margin-left: 50px;
-    margin-right: 50px;
-    width: 90%;
-    grid-column-gap: 10ox;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
     grid-row-gap: 20px;
@@ -212,7 +213,7 @@ h3{
 #BBBSText{
     grid-area: BBBSText;
     text-align: center;
-    padding: 0px 10px 0px 10px;    
+    padding: 0px 20px 0px 20px;    
 }
 
 #SJImg{
@@ -223,9 +224,8 @@ h3{
 #SJText{
     grid-area: SJText;
     text-align: center;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 20px 0px 20px;
 }
-
 
 .footer{
     height: 40px;
@@ -239,7 +239,84 @@ h3{
     
 }
 
+/*Responsivenes*/
+@media all and (min-width:320px) and (max-width:1024px){
+    #homeGrid{
+        grid-template-areas: 
+        "BBBSImg"
+        "BBBSText"
+        "SJImg"
+        "SJText";
+        grid-template-columns: 1fr 0;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        grid-row-gap: 20px;
+    }
+    #SJText{
+        padding-bottom: 20px;
+    }
+    #BBBSText{
+        padding-bottom: 20px;
+    }
 
+    .hero1{
+        font-size: 40px;
+    }
+    
+    .hero2{
+        font-size: 28px;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+    
+    h2{
+        font-size: 24px;
+    }
+    
+    h3{
+        font-size: 20px;
+    }
+
+    .mainHeader{
+        font-size: 36px;
+    }
+
+    .bodyText{
+        font-size: 16px;
+        font-weight: 400;
+        text-align: justify center;
+        width: 500px;
+        margin: 0 auto;
+    }
+    
+    .description{
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: -20px;
+    }
+
+    .caseStudyButton{
+        border-radius: 45px;
+        padding: 16px 30px 16px 30px;
+        font-size: 16px;
+    }
+
+    /*
+    .rightnav{
+        display: none;
+    }
+    .Hamburger{
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+    }
+    */
+    }
 
 
 
