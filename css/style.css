@@ -9,6 +9,9 @@
     top: 0;
 }
 
+button{
+    font-family: 'Raleway', sans-serif;
+}
 .rightnav{
     margin-right: 0px;
 }
@@ -58,6 +61,8 @@ a:hover {
     border-radius: 35px;
     border: 3px solid #6f66be;
     color: #FFFFFF;
+    float: right;
+
 }
 
 .button:hover{
@@ -179,6 +184,8 @@ h3{
 .caseStudyButton{
     background-color: #ffffff;
     border-radius: 35px;
+    border: none;
+    text-decoration: none;
     padding: 16px 30px 16px 30px;
     box-shadow: 0px 0px 10px 0px #9792c4;
     font-size: 24px;
@@ -187,10 +194,14 @@ h3{
 
 .caseStudyButton:hover{
     background-color: #6f66be;
-    color: #ffffff;
+    color: #ffffff !important;
     box-shadow: 0px 0px 0px 0px;
 }
 
+a .caseStudyButtonFont:hover{
+    color: white;
+    padding: 16px 24px;
+}
 
 /*Grid*/
 #homeGrid{
@@ -240,7 +251,7 @@ h3{
 }
 
 /*Responsivenes*/
-@media all and (min-width:320px) and (max-width:1024px){
+@media all and (max-width:1023px){
     #homeGrid{
         grid-template-areas: 
         "BBBSImg"
@@ -253,6 +264,7 @@ h3{
         justify-content: center;
         grid-row-gap: 20px;
     }
+
     #SJText{
         padding-bottom: 20px;
     }
@@ -286,17 +298,10 @@ h3{
 
     .bodyText{
         font-size: 16px;
-        font-weight: 400;
-        text-align: justify center;
-        width: 500px;
-        margin: 0 auto;
     }
     
     .description{
         font-size: 16px;
-        font-weight: 400;
-        text-align: center;
-        margin-top: -20px;
     }
 
     .caseStudyButton{
