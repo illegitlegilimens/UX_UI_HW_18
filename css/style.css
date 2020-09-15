@@ -1,18 +1,4 @@
-.content{
-    min-height: 400px;
-    margin: 50px 50px 50px 50px;
-    
-}
-
-
-.body{
-    font-family: 'Raleway', sans-serif;
-    color: #363636;
-    background-color: #F5F4FF;
-    margin-right: 100px;
-    margin-left: 100px;
-}
-
+/*nav bar*/
 .nav{
     background-color: #F5F4FF;
     background-size: 100%;
@@ -26,22 +12,31 @@
     margin-right: 0px;
 }
 
-img{
-    max-width: 100%;
-    height: auto;
+/*contact button nav*/
+#contact-button{
+    color: #ffffff;
 }
 
+#contact-button:hover{
+    color: #6f66be;
+}
 
-a:link{
+#logo{
+    font-size: 48px;
+    font-weight: 600;
+    float: left;
+}
+
+a:link {
     color: #363636;
     text-decoration: none;
 }
 
-a:visited{
+a:visited {
     color: #363636;
 }
 
-a:hover{
+a:hover {
     color: #6f66be;
 }
 
@@ -67,22 +62,7 @@ a:hover{
     text-decoration: none !important;
 }
 
-/*contact button nav*/
-#contact-button{
-    color: #ffffff;
-}
-
-#contact-button:hover{
-    color: #6f66be;
-}
-
-
-#logo{
-    font-size: 48px;
-    font-weight: 600;
-    float: left;
-}
-
+/*hero*/
 .hero{
     text-align: center;
     margin-top: 100px;
@@ -102,6 +82,36 @@ a:hover{
     text-align: center;
     margin: 5px;
 }
+
+
+/*main body*/
+.content{
+    min-height: 400px;
+    margin: 50px 50px 50px 50px;
+    
+}
+
+.body{
+    font-family: 'Raleway', sans-serif;
+    color: #363636;
+    background-color: #F5F4FF;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+img{
+    max-width: 90%;
+    height: auto;
+}
+
+.zoom{
+    transition: transform .2s;
+}
+
+.zoom:hover{
+    transform: scale(1.1);
+}
+
 
 .mainHeader{
     font-size: 48px;
@@ -162,21 +172,6 @@ h3{
 
 }
 
-.caseStudiesPic{
-    width: 50%;
-    padding: 0px 10px 0px 10px;
-    margin: 0px;
-    display: inline-block;
-}
-
-.caseStudiesText{
-    width: 50%;
-    padding: 0px 10px 0px 10px;
-    margin: 0px;
-    text-align: center;
-
-}
-
 .caseStudyButton{
     background-color: #ffffff;
     border-radius: 35px;
@@ -191,6 +186,46 @@ h3{
     color: #ffffff;
     box-shadow: 0px 0px 0px 0px;
 }
+
+
+/*Grid*/
+#homeGrid{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    "BBBSImg BBBSText"
+    "SJImg SJText";
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 90%;
+    grid-column-gap: 10ox;
+    align-items: center;
+    justify-content: center;
+    grid-row-gap: 20px;
+}
+
+#BBBSImg{
+    grid-area: BBBSImg;
+    text-align: center;
+}
+
+#BBBSText{
+    grid-area: BBBSText;
+    text-align: center;
+    padding: 0px 10px 0px 10px;    
+}
+
+#SJImg{
+    grid-area: SJImg;
+    text-align: center
+;}
+
+#SJText{
+    grid-area: SJText;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+}
+
 
 .footer{
     height: 40px;
