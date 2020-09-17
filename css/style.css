@@ -1,26 +1,23 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
 /*nav bar*/
-.nav{
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 50px 10px 50px;
+    overflow: hidden;
     background-color: #F5F4FF;
-    background-size: 100%;
-    height: 80px;
-    width: 90%;
-    margin: 20px 50px 20px 50px;
-    display: block;
-    top: 0;
+}
+#logo{
+    font-size: 48px;
+    font-weight: 600;
+    float: left;
 }
 
-button{
-    font-family: 'Raleway', sans-serif;
-}
-.rightnav{
-    margin-right: 0px;
-}
-
-.Hamburger{
-    display: none;
-}
-
-/*contact button nav*/
 #contact-button{
     color: #ffffff;
     font-weight: 600;
@@ -30,27 +27,6 @@ button{
 #contact-button:hover{
     color: #6f66be;
 }
-
-#logo{
-    font-size: 48px;
-    font-weight: 600;
-    float: left;
-}
-
-a:link {
-    color: #363636;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #363636;
-}
-
-a:hover {
-    color: #6f66be;
-}
-
-
 .navLinks{
     font-size: 22px;
     font-weight: 600;
@@ -74,10 +50,22 @@ a:hover {
     text-decoration: none !important;
 }
 
+li a:link {
+    color: #363636;
+    text-decoration: none;
+}
+
+li a:visited {
+    color: #363636;
+}
+
+li a:hover {
+    color: #6f66be;
+}
+
 /*hero*/
 .hero{
     text-align: center;
-    margin-top: 100px;
     margin-bottom: 200px;
 }
 
@@ -100,15 +88,19 @@ a:hover {
 /*main body*/
 .content{
     min-height: 400px;
-    margin: 50px 50px 50px 50px;
+    width: 100vw;
+    background-image: url(../images/backgroundsquiggle.svg);
+    object-fit: cover;
+    background-size: 100vw;
+    background-repeat: no-repeat;
 }
 
 .body{
     font-family: 'Raleway', sans-serif;
     color: #363636;
     background-color: #F5F4FF;
-    margin-right: 100px;
-    margin-left: 100px;
+    width: 100vw;
+    padding: 0px 5% 0px 5%x;
 }
 
 img{
@@ -123,6 +115,24 @@ img{
 .zoom:hover{
     transform: scale(1.05);
 }
+
+.bounce{
+    animation: WorkArrow .7s infinite;
+}
+
+
+@keyframes WorkArrow {
+    from {
+    transform: translateY(0px);
+  
+    }
+    50% {
+    transform: translateY(5px);
+    }
+    to {
+    transform: translateY(0px);
+    }
+  }
 
 .mainHeader{
     font-size: 48px;
@@ -139,6 +149,8 @@ img{
 
 .downArrow{
     width: 80px;
+    z-index: -100;
+    bottom: 0px;
 }
 
 h1{
@@ -185,6 +197,7 @@ h3{
 
 .caseStudyButton{
     background-color: #ffffff;
+    color: #363636;
     border-radius: 35px;
     border: none;
     text-decoration: none;
@@ -213,6 +226,7 @@ a .caseStudyButtonFont:hover{
     "BBBSImg BBBSText"
     "SJImg SJText";
     margin: 0 auto;
+    padding: 0px 50px 0px 50px;
     align-items: center;
     justify-content: center;
     grid-row-gap: 20px;
@@ -243,7 +257,7 @@ a .caseStudyButtonFont:hover{
 .footer{
     height: 40px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #F5F4FF;
     position: relative;
     bottom: 0px;
     left: 0px;
@@ -312,15 +326,18 @@ a .caseStudyButtonFont:hover{
         font-size: 16px;
     }
 
-    /*
     .rightnav{
         display: none;
     }
+    
+    /*
     .Hamburger{
-        position: absolute;
-        right: 0;
-        top: 0;
-        display: block;
+        margin: 0px;
+        float: right;
+    }
+
+    #hamburger{
+        width: 50px;
     }
     */
     }
