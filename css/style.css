@@ -3,6 +3,13 @@ html, body{
     padding: 0;
 }
 
+body{
+    font-family: 'Raleway', sans-serif;
+    color: #363636;
+    background-color: #F5F4FF;
+    width: 100vw;
+}
+
 /*nav bar*/
 
 ul{
@@ -95,13 +102,7 @@ li a:hover {
     background-repeat: no-repeat;
 }
 
-.body{
-    font-family: 'Raleway', sans-serif;
-    color: #363636;
-    background-color: #F5F4FF;
-    width: 100vw;
-    padding: 0px 5% 0px 5%x;
-}
+
 
 img{
     max-width: 90%;
@@ -138,6 +139,7 @@ img{
     font-size: 48px;
     font-weight: 600;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 #workTitle{
@@ -218,14 +220,15 @@ a .caseStudyButtonFont:hover{
     padding: 16px 24px;
 }
 
-/*Grid*/
-#homeGrid{
+/*My Work Grid*/
+#workGrid{
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-areas: 
     "BBBSImg BBBSText"
     "SJImg SJText";
     margin: 0 auto;
+    margin-top: 50px;
     padding: 0px 50px 0px 50px;
     align-items: center;
     justify-content: center;
@@ -254,6 +257,24 @@ a .caseStudyButtonFont:hover{
     padding: 0px 20px 0px 20px;
 }
 
+
+
+/*My Skills Flexbox*/
+#mySkills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+
+
+
+
+/*footer*/
+
 .footer{
     height: 40px;
     width: 100%;
@@ -265,7 +286,6 @@ a .caseStudyButtonFont:hover{
     text-align: center;
     
 }
-
 /*Responsivenes*/
 @media all and (max-width:1023px){
     #homeGrid{
