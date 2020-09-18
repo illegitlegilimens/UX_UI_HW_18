@@ -70,7 +70,7 @@ ul{
 
 .hamburger{
     width:50px;
-    padding: 10px 0px 0px 0px;
+    padding: 0px;
     display: none;
     float: right;
     color: #363636;
@@ -317,7 +317,7 @@ a .caseStudyButtonFont:hover{
     
 }
 /*Responsivenes*/
-@media all and (max-width:1023px){
+@media all and (max-width:1023px) {
     #homeGrid{
         grid-template-areas: 
         "BBBSImg"
@@ -385,6 +385,7 @@ a .caseStudyButtonFont:hover{
         margin: 0px;
         display: block;
         float: right;
+        vertical-align: middle;
     }
     #mySkills{
         display: flex;
