@@ -8,6 +8,17 @@ body{
     color: #363636;
     background-color: #F5F4FF;
     width: 100vw;
+    background-image: url(../images/backgroundsquiggle.svg);
+    object-fit: cover;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 100px;
+}
+
+p{
+    margin: 0;
+    padding: 0;
 }
 
 /*nav bar*/
@@ -57,6 +68,16 @@ ul{
     text-decoration: none !important;
 }
 
+.hamburger{
+    width:50px;
+    padding: 10px 0px 0px 0px;
+    display: none;
+    float: right;
+    color: #363636;
+}
+
+
+
 li a:link {
     color: #363636;
     text-decoration: none;
@@ -96,10 +117,7 @@ li a:hover {
 .content{
     min-height: 400px;
     width: 100vw;
-    background-image: url(../images/backgroundsquiggle.svg);
-    object-fit: cover;
-    background-size: 100vw;
-    background-repeat: no-repeat;
+
 }
 
 
@@ -142,8 +160,8 @@ img{
     text-align: center;
 }
 
-#workTitle{
-    width: 200px;
+#Title{
+    width: 400px;
     margin: 0 auto;
     display: block;
     text-align: center;
@@ -238,12 +256,13 @@ a .caseStudyButtonFont:hover{
 #BBBSImg{
     grid-area: BBBSImg;
     text-align: center;
+ 
 }
 
 #BBBSText{
     grid-area: BBBSText;
     text-align: center;
-    padding: 0px 20px 0px 20px;    
+    margin-top: -50px
 }
 
 #SJImg{
@@ -254,7 +273,7 @@ a .caseStudyButtonFont:hover{
 #SJText{
     grid-area: SJText;
     text-align: center;
-    padding: 0px 20px 0px 20px;
+    margin-top: -50px;
 }
 
 
@@ -265,13 +284,24 @@ a .caseStudyButtonFont:hover{
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 20px;
+    padding: 0px 2% 0px 2%;
 }
 
+.skillCard{
+    background-color: none;
+    width: 40%;
+    align-content: center;
+}
 
+.skillCard img{
+    margin-top: 20px;
+}
 
-
-
+.skillCard p{
+    font-size: 24px;
+    max-width: 700px;
+}
 
 /*footer*/
 
@@ -310,6 +340,7 @@ a .caseStudyButtonFont:hover{
 
     .hero1{
         font-size: 40px;
+        font-weight: 600;
     }
     
     .hero2{
@@ -346,20 +377,42 @@ a .caseStudyButtonFont:hover{
         font-size: 16px;
     }
 
-    .rightnav{
+    .navLinks{
         display: none;
     }
     
-    /*
     .Hamburger{
         margin: 0px;
+        display: block;
         float: right;
     }
-
-    #hamburger{
-        width: 50px;
+    #mySkills{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 50px;
+        padding: 0px 2% 0px 2%;
+        flex-flow: column wrap;
     }
-    */
+    
+    .skillCard{
+        background-color: none;
+        width: 70%;
+        align-content: center;
+        text-align: center;
+    }
+    
+    .skillCard img{
+        max-width: 400px;
+        margin-top: 20px;
+    }
+    
+    .skillCard p{
+        font-size: 20px;
+        max-width: 700px;
+        margin-top: 50px;
+    }
     }
 
 
