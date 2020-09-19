@@ -385,7 +385,6 @@ a .caseStudyButtonFont:hover{
         margin: 0px;
         display: block;
         float: right;
-        vertical-align: middle;
     }
     #mySkills{
         display: flex;
