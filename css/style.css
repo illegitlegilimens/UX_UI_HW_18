@@ -23,7 +23,7 @@ p{
 
 /*nav bar*/
 
-ul{
+nav ul{
     list-style-type: none;
     margin: 0;
     padding: 20px 50px 10px 50px;
@@ -73,10 +73,12 @@ ul{
     padding: 0px;
     display: none;
     float: right;
-    color: #363636;
 }
 
-
+.fa-hamburger{
+    font-size: 50px;
+    color: #363636;
+}
 
 li a:link {
     color: #363636;
@@ -90,6 +92,35 @@ li a:visited {
 li a:hover {
     color: #6f66be;
 }
+
+/* Mobile nav menu */
+
+.active{
+    display: block;
+}
+#hamburgerMenu {
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
+#hamburgerMenu {
+    text-align: right;
+    list-style-type: none;
+    width: 50%;
+    height: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.mobileLinks{ 
+    font-size: 20px;
+    font-weight: 600;
+    text-align: end;
+    padding: 20px 10px 20px 10px;
+}
+
 
 /*hero*/
 .hero{
@@ -119,8 +150,6 @@ li a:hover {
     width: 100vw;
 
 }
-
-
 
 img{
     max-width: 90%;
@@ -318,7 +347,11 @@ a .caseStudyButtonFont:hover{
 }
 /*Responsivenes*/
 @media all and (max-width:1023px) {
-    #homeGrid{
+    nav{
+        top: 100px;
+    }
+    
+    #workGrid{
         grid-template-areas: 
         "BBBSImg"
         "BBBSText"
@@ -386,6 +419,9 @@ a .caseStudyButtonFont:hover{
         display: block;
         float: right;
     }
+
+
+
     #mySkills{
         display: flex;
         align-items: center;
