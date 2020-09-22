@@ -1,6 +1,7 @@
 html, body{
     margin: 0;
     padding: 0;
+    width: 100vw;
 }
 
 body{
@@ -23,28 +24,55 @@ p{
 
 /*nav bar*/
 
+nav{
+    padding: 0px 50px 0px 50px;
+    position: relative;
+    height: 100px;
+    margin-right: 0px;
+}
+
 nav ul{
     list-style-type: none;
-    margin: 0;
-    padding: 20px 50px 10px 50px;
+    margin-right: 0px;
+    padding: 20px 0px 10px 0px;
     overflow: hidden;
     background-color: #F5F4FF;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-inline-start: 0px;
 }
+
+ul{
+    margin: 0px;
+}
+
 #logo{
     font-size: 48px;
     font-weight: 600;
     float: left;
+    padding-top: 18px;
+    color: #363636 !important;
+    text-decoration: none !important;
 }
 
 #contact-button{
-    color: #ffffff;
     font-weight: 600;
-    text-decoration: none;
+    text-decoration: none;    
+    background-color: #6f66be;
+    border-radius: 35px;
+    border: 3px solid #6f66be;
+    color: #ffffff;
+    flex-wrap: wrap-reverse;
+
 }
 
 #contact-button:hover{
     color: #6f66be;
+    background-color: #F5F4FF;
+    border: 3px solid #6f66be;
+    text-decoration: none !important;
 }
+
 .navLinks{
     font-size: 22px;
     font-weight: 600;
@@ -52,32 +80,22 @@ nav ul{
     float: right;
 }
 
-.button{
-    background-color: #6f66be;
-    border-radius: 35px;
-    border: 3px solid #6f66be;
-    color: #FFFFFF;
-    float: right;
-
-}
-
-.button:hover{
-    background-color: #F5F4FF;
-    border: 3px solid #6f66be;
-    color: #6f66be;
-    text-decoration: none !important;
-}
-
 .hamburger{
     width:50px;
     padding: 0px;
     display: none;
     float: right;
+    padding-top: 18px;
 }
 
 .fa-hamburger{
     font-size: 50px;
     color: #363636;
+}
+
+a{
+    color: #363636;
+    text-decoration: none;
 }
 
 li a:link {
@@ -97,28 +115,6 @@ li a:hover {
 
 .active{
     display: block;
-}
-#hamburgerMenu {
-    width: auto;
-    height: auto;
-    margin: 0;
-}
-
-#hamburgerMenu ul{
-    text-align: right;
-    list-style-type: none;
-    width: 50%;
-    height: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-.mobileLinks{ 
-    font-size: 20px;
-    font-weight: 600;
-    text-align: end;
-    padding: 20px 10px 20px 10px;
 }
 
 
@@ -148,7 +144,6 @@ li a:hover {
 .content{
     min-height: 400px;
     width: 100vw;
-
 }
 
 img{
@@ -223,7 +218,7 @@ h3{
     font-size: 18px;
     font-weight: 400;
     text-align: justify center;
-    width: 500px;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -347,37 +342,64 @@ a .caseStudyButtonFont:hover{
 }
 /*Responsivenes*/
 @media all and (max-width:1023px) {
-    nav{
-        top: 100px;
-    }
-    
-    #workGrid{
-        grid-template-areas: 
-        "BBBSImg"
-        "BBBSText"
-        "SJImg"
-        "SJText";
-        grid-template-columns: 1fr 0;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-        grid-row-gap: 20px;
+    nav ul{
+        top: 100%;
+        right: 0;
+        position: absolute;
+        list-style-type: none;
+        margin: 0;
+        padding: 20px 50px 10px 50px;
+        overflow: hidden;
+        background-color: #F5F4FF;
+        display: none;
+        max-width: 300px;
+        border: #a7a2da solid 2px;
+        border-radius: 8px;
     }
 
-    #SJText{
-        padding-bottom: 20px;
+    .navLinks{
+        float: none;
+        text-align: right;
     }
-    #BBBSText{
-        padding-bottom: 20px;
+
+    #contact-button{
+        font-weight: 600;
+        text-decoration: none;    
+        background-color: #F5F4FF;
+        ;
+        border-radius: none;
+        border: none;
+        color: #363636;
+    }
+
+    #contact-button:hover{
+        color: #6f66be;
+        background-color: none;
+        border: none;
+        text-decoration: none !important;
+    }
+
+    .Hamburger{
+        margin: 0px;
+        display: block;
+        float: right;
+    }
+
+    .content{
+        min-height: 400px;
+        width: 100vw;
+        margin: 0px 10px 0px 10px;
     }
 
     .hero1{
         font-size: 40px;
         font-weight: 600;
+
     }
     
     .hero2{
         font-size: 28px;
+
     }
 
     h1{
@@ -394,14 +416,32 @@ a .caseStudyButtonFont:hover{
 
     .mainHeader{
         font-size: 36px;
+        width: 80%;
     }
 
     .bodyText{
         font-size: 16px;
+        width: 80%;
     }
     
     .description{
         font-size: 16px;
+    }
+
+
+  
+    
+    #workGrid{
+        grid-template-areas: 
+        "BBBSImg"
+        "BBBSText"
+        "SJImg"
+        "SJText";
+        grid-template-columns: 1fr 0;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        grid-row-gap: 20px;
     }
 
     .caseStudyButton{
@@ -410,16 +450,13 @@ a .caseStudyButtonFont:hover{
         font-size: 16px;
     }
 
-    .navLinks{
-        display: none;
-    }
-    
-    .Hamburger{
-        margin: 0px;
-        display: block;
-        float: right;
-    }
 
+    #SJText{
+        padding-bottom: 20px;
+    }
+    #BBBSText{
+        padding-bottom: 20px;
+    }
 
 
     #mySkills{

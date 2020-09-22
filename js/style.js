@@ -1,9 +1,13 @@
 $(".hamburger").on("click", function(){
-    $(".hamburger").toggleClass("active");
-    if($(".hamburger").toggleClass("active")){
-        $("#hamburgerMenu").css("height","auto");
-    }
-    else{
-        $("#hamburgerMenu").css("height", "0px");
+    $("nav ul").toggleClass("active");
+});
+
+$(document).resize(function () {
+    var screen = $(window);  
+
+    if (screen.width < 1023) {
+        $('li').removeClass('button');
+    } else {
+        $('li').addClass('button');
     }
 });
