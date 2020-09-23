@@ -382,7 +382,7 @@ a .caseStudyButtonFont:hover{
         margin: 0;
         padding: 20px 50px 10px 50px;
         overflow: hidden;
-        background-color: #FFFFFF;
+        background-color: #F5F4FF;
         display: none;
         max-width: 300px;
     }
@@ -454,7 +454,7 @@ a .caseStudyButtonFont:hover{
         font-size: 16px;
         padding: 20px;
     }
-    
+
     #workGrid{
         grid-template-areas: 
         "BBBSImg"
