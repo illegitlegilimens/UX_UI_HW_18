@@ -62,12 +62,18 @@ ul{
     border-radius: 35px;
     border: 3px solid #6f66be;
     color: #ffffff;
-    flex-wrap: wrap-reverse;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 16px 24px;
+    float: right;
+}
 
+#contactColor:hover{
+    color: #6f66be;
 }
 
 #contact-button:hover{
-    color: #6f66be;
+    color: #6f66be !important;
     background-color: #F5F4FF;
     border: 3px solid #6f66be;
     text-decoration: none !important;
@@ -78,6 +84,10 @@ ul{
     font-weight: 600;
     padding: 16px 24px;
     float: right;
+}
+
+#mobileContact{
+    display: none;
 }
 
 .hamburger{
@@ -98,16 +108,34 @@ a{
     text-decoration: none;
 }
 
-li a:link {
+a:link {
     color: #363636;
     text-decoration: none;
 }
 
-li a:visited {
+a:visited {
     color: #363636;
 }
 
-li a:hover {
+a:hover {
+    color: #6f66be;
+}
+
+#contact-button a{
+    color: #363636;
+    text-decoration: none;
+}
+
+#contact-button a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#contact-button a:visited {
+    color: #ffffff;
+}
+
+#contact-button a:hover {
     color: #6f66be;
 }
 
@@ -350,35 +378,29 @@ a .caseStudyButtonFont:hover{
         margin: 0;
         padding: 20px 50px 10px 50px;
         overflow: hidden;
-        background-color: #F5F4FF;
+        background-color: #FFFFFF;
         display: none;
         max-width: 300px;
-        border: #a7a2da solid 2px;
-        border-radius: 8px;
     }
 
     .navLinks{
         float: none;
         text-align: right;
+        padding: 20px 15px;
+    }
+    
+    nav ul li{
+        border-bottom: 1px #6f66be;
     }
 
     #contact-button{
-        font-weight: 600;
-        text-decoration: none;    
-        background-color: #F5F4FF;
-        ;
-        border-radius: none;
-        border: none;
-        color: #363636;
+        display: none;
     }
 
-    #contact-button:hover{
-        color: #6f66be;
-        background-color: none;
-        border: none;
-        text-decoration: none !important;
+    #mobileContact{
+        display: block;
     }
-
+    
     .Hamburger{
         margin: 0px;
         display: block;
