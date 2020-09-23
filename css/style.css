@@ -370,6 +370,10 @@ a .caseStudyButtonFont:hover{
 }
 /*Responsivenes*/
 @media all and (max-width:1023px) {
+    p{
+    display: inline-block;
+    }
+    
     nav ul{
         top: 100%;
         right: 0;
@@ -448,10 +452,8 @@ a .caseStudyButtonFont:hover{
     
     .description{
         font-size: 16px;
+        padding: 20px;
     }
-
-
-  
     
     #workGrid{
         grid-template-areas: 
