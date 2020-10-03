@@ -33,7 +33,7 @@ nav{
 
 nav ul{
     list-style-type: none;
-    margin-right: 0px;
+    /* margin-right: 0px; */
     padding: 20px 0px 10px 0px;
     overflow: hidden;
     background-color: #F5F4FF;
@@ -68,9 +68,6 @@ ul{
     float: right;
 }
 
-#contactColor:hover{
-    color: #6f66be;
-}
 
 #contact-button:hover{
     color: #6f66be !important;
@@ -369,7 +366,7 @@ a .caseStudyButtonFont:hover{
     
 }
 /*Responsivenes*/
-@media all and (max-width:1023px) {
+@media all and (max-width:1022px) {
     p{
     display: inline-block;
     }
@@ -405,10 +402,9 @@ a .caseStudyButtonFont:hover{
         display: block;
     }
     
-    .Hamburger{
+    .hamburger{
         margin: 0px;
         display: block;
-        float: right;
     }
 
     .content{
